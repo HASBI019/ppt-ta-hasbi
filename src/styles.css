@@ -121,12 +121,38 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:10.5px}th
   object-position:center;
   display:block;
 }
+.tahapan-image-btn {
+  all: unset;
+  cursor: zoom-in;
+  display: block;
+  width: 100%;
+}
+
+.zoom-hint-btn {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #9fb3c8;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+
+.zoom-hint-btn:hover {
+  background: rgba(255,255,255,.12);
+  color: #fff;
+}
 .usecase-layout{max-width:1400px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:5vw;align-items:center;height:100%}.usecase-image{height:67vh;min-height:420px;position:relative;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#090e16}.usecase-image .asset-frame img{object-fit:contain;padding:20px}.image-expand{position:absolute;right:16px;bottom:16px;border:1px solid rgba(255,255,255,.13);background:rgba(4,9,15,.72);backdrop-filter:blur(15px);border-radius:999px;padding:10px 13px;display:flex;gap:8px;align-items:center;cursor:pointer}.usecase-copy .lead{font-size:16px}.explain-list{margin-top:24px;display:grid;gap:10px}.explain-item{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:13px 0;border-top:1px solid var(--line)}.explain-item span{font:600 11px "Space Grotesk";color:var(--cyan)}.explain-item p{font-size:14px;color:#c9d4e2;line-height:1.55}
 .demo-wrap{display:grid;grid-template-columns:1fr 380px;gap:8vw;align-items:center;max-width:1100px;margin:8vh auto 0}.demo-copy h2{font-size:60px}.demo-copy p{font-size:17px;margin:20px 0;max-width:600px}.demo-link{display:block;color:#77e8df;font:500 13px "Space Grotesk";word-break:break-all;margin:15px 0;text-decoration:none}.qr-card{padding:25px;background:#fff;border-radius:28px;display:flex;flex-direction:column;align-items:center;gap:12px;color:#111;box-shadow:0 30px 90px rgba(0,0,0,.35)}.qr-card img{width:100%;max-width:300px}.qr-card span{font:600 11px "Space Grotesk";letter-spacing:.1em;text-transform:uppercase}.qr-placeholder{width:300px;height:300px;display:grid;place-items:center;background:#eee;font-size:60px}
 .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px}.metric{border:1px solid var(--line);background:var(--card);border-radius:25px;padding:30px}.metric strong{font:700 62px "Space Grotesk";display:block;color:#e9ffff}.metric span{display:block;margin-top:15px;font-weight:600}.metric small{display:block;color:var(--cyan);margin-top:10px}
 .closing-scene{max-width:1050px;margin:auto;display:flex;flex-direction:column;justify-content:center;height:100%}.closing-scene h1{font-size:66px}.closing-lead{font-size:18px;max-width:950px;margin-top:22px}.suggestion{display:flex;gap:20px;margin-top:28px;border-left:2px solid var(--cyan);padding:16px 20px;background:rgba(99,230,223,.04)}.suggestion b{font:600 11px "Space Grotesk";color:var(--cyan);letter-spacing:.14em;text-transform:uppercase}.suggestion span{color:#aebbcf;font-size:14px}.thankyou{margin-top:45px;font:600 12px "Space Grotesk";letter-spacing:.35em;color:#65758d}
 .bottom-nav{position:absolute;z-index:20;left:5vw;right:5vw;bottom:4.5vh;display:flex;align-items:center;justify-content:space-between}.bottom-nav span{font:500 11px "Space Grotesk";letter-spacing:.15em;color:#536176}.bottom-nav button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:rgba(5,9,15,.55);display:grid;place-items:center;cursor:pointer}.bottom-nav button:disabled{opacity:.25;cursor:not-allowed}
-.menu-overlay,.image-modal{position:absolute;z-index:50;inset:0;background:rgba(3,6,11,.94);backdrop-filter:blur(24px)}.menu-inner{padding:10vh 9vw}.close-menu,.modal-close{border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:999px;padding:10px 15px;display:flex;align-items:center;gap:8px;cursor:pointer}.menu-title{font:500 clamp(34px,5vw,70px) "Space Grotesk";margin:7vh 0 35px}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.menu-grid button{border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:15px;padding:17px;text-align:left;cursor:pointer;color:#aeb9c9}.menu-grid button:hover,.menu-grid button.active{border-color:rgba(99,230,223,.4);color:#efffff;background:rgba(99,230,223,.06)}.menu-grid small{font:600 10px "Space Grotesk";color:var(--cyan);margin-right:12px}.image-modal{display:grid;place-items:center;padding:5vh 5vw}.image-modal img{max-width:90vw;max-height:88vh;object-fit:contain}.modal-close{position:absolute;right:4vw;top:4vh}
+.menu-overlay,.image-modal{position:absolute;z-index:50;inset:0;background:rgba(3,6,11,.94);backdrop-filter:blur(24px)}.menu-inner{padding:10vh 9vw}.close-menu,.modal-close{border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:999px;padding:10px 15px;display:flex;align-items:center;gap:8px;cursor:pointer}.menu-title{font:500 clamp(34px,5vw,70px) "Space Grotesk";margin:7vh 0 35px}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.menu-grid button{border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:15px;padding:17px;text-align:left;cursor:pointer;color:#aeb9c9}.menu-grid button:hover,.menu-grid button.active{border-color:rgba(99,230,223,.4);color:#efffff;background:rgba(99,230,223,.06)}.menu-grid small{font:600 10px "Space Grotesk";color:var(--cyan);margin-right:12px}.image-modal{display:grid;place-items:center;padding:2vh 2vw}.image-modal img{max-width:97vw;max-height:95vh;object-fit:contain}.modal-close{position:absolute;right:4vw;top:4vh}
 @media(max-width:1050px){
  .home-grid,.split-scene,.usecase-layout,.demo-wrap{grid-template-columns:1fr}.profile-card{height:38vh;max-width:500px}.card-grid.four,.goal-grid,.metric-grid{grid-template-columns:1fr 1fr}.method-flow{grid-template-columns:repeat(3,1fr)}.method-step i{display:none}.usecase-image{height:42vh}.position-scene{min-width:1050px}.scene{overflow:auto}
 }

@@ -187,7 +187,7 @@ function Slide({ index, setIndex, setFullscreen }) {
     case 8: return <Posisi/>;
     case 9: return <Manfaat/>;
     case 10: return <Metodologi/>;
-    case 11: return <Tahapan/>;
+    case 11: return <Tahapan onOpen={() => setFullscreen("/assets/screenshots/tahapan-penelitian.png")}/>;
     case 12: return <UseCasePanel data={useCases[0]} onOpen={() => setFullscreen(useCases[0].image)}/>;
     case 13: return <UseCasePanel data={useCases[1]} onOpen={() => setFullscreen(useCases[1].image)}/>;
     case 14: return <UseCasePanel data={useCases[2]} onOpen={() => setFullscreen(useCases[2].image)}/>;
@@ -328,7 +328,7 @@ function Metodologi() {
   return <div className="content-wide"><div className="eyebrow">BAB III · METODOLOGI PENELITIAN</div><h1>Tahapan penelitian disusun secara sistematis.</h1><div className="method-flow">{["Identifikasi Masalah","Studi Literatur","Pengumpulan Data","Pengembangan Sistem","Pengujian & Validasi","Final Release"].map((x,i)=><div className="method-step" key={x}><span>{String(i+1).padStart(2,"0")}</span><b>{x}</b>{i<5 && <i>→</i>}</div>)}</div><p className="method-note">Pengembangan sistem menggunakan pendekatan Incremental sehingga kebutuhan yang diperoleh menjadi dasar pengembangan modul secara bertahap.</p></div>
 }
 
-function Tahapan() {
+function Tahapan({ onOpen }) {
   return (
     <div className="split-scene tahapan-scene">
       <div className="tahapan-copy">
@@ -346,12 +346,14 @@ function Tahapan() {
         </div>
       </div>
 
-      <div className="tahapan-image-card">
-        <PlaceholderImage
-          src="/assets/screenshots/tahapan-penelitian.png"
-          alt="Tahapan Penelitian"
-          className="tahapan-image"
-        />
+            <div className="tahapan-image-card">
+        <button type="button" className="tahapan-image-btn" onClick={onOpen}>
+          <PlaceholderImage
+            src="/assets/screenshots/tahapan-penelitian.png"
+            alt="Tahapan Penelitian"
+            className="tahapan-image"
+          />
+        </button>
       </div>
     </div>
   );
