@@ -278,7 +278,7 @@ function MethodChoice() {
     <div className="method-compare">
       <div className="method-compare-card agile"><div className="compare-label">PENDEKATAN PEMBANDING</div><h2>Agile</h2><p>Increment dapat berukuran lebih kecil dan dirilis lebih cepat, dengan penentuan increment berikutnya menyesuaikan progres serta perubahan kebutuhan pengguna.</p><div className="compare-tags"><span>Adaptif</span><span>Iteratif</span><span>Rilis cepat</span></div></div>
       <div className="compare-vs">VS</div>
-      <div className="method-compare-card chosen"><div className="compare-label">DIPILIH</div><h2>Incremental</h2><p>Sistem dibangun bertahap dalam beberapa versi. Setiap release menambahkan fitur dari versi sebelumnya sehingga pengembangan lebih terukur dan dapat dievaluasi sebelum sistem menjadi utuh.</p><div className="compare-tags"><span>4 Increment</span><span>Plan-driven</span><span>Evaluasi bertahap</span></div></div>
+      <div className="method-compare-card chosen"><div className="compare-label">DIPILIH</div><h2>Plan-driven</h2><p>Seluruh increment sudah ditentukan sejak awal proyek dimulai, karena kebutuhan sistem seperti data master, transaksi, dan fitur prediksi sudah bisa dipetakan garis besarnya sejak penelitian dimulai.</p><div className="compare-tags"><span>4 Increment</span><span>Plan-driven</span><span>Evaluasi bertahap</span></div></div>
     </div>
     <div className="choice-reason"><span>ALASAN UTAMA</span><strong>Pengembangan dibagi menjadi bagian yang lebih kecil sehingga kebutuhan, implementasi, dan pengujian dapat dikelola secara bertahap.</strong><small>Increment 1 → Aset · Increment 2 → Peminjaman · Increment 3 → Prediksi · Increment 4 → Pelaporan</small></div>
   </div>
