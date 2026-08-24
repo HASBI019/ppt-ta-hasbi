@@ -1,62 +1,54 @@
-# Sidang TA Web Interaktif — V5
+# 📊 Web Presentation — Sidang Tugas Akhir
 
-Versi ini dirapikan menjadi website presentasi full-screen, bukan PPT biasa.
+<p align="center">
+  <b>Interactive & Animated Presentation Slide</b><br>
+  Rancang Bangun Sistem Informasi Manajemen Inventaris di Sekolah Tinggi Teknologi Cipasung dengan Fitur Predictive Maintenance Menggunakan Metode Incremental Development dan Algoritma Simple Moving Average
+</p>
 
-## Perubahan utama
-- Tidak ada speaker notes.
-- Tidak ada stimulus & respon di tampilan.
-- Penjelasan Use Case dibuat sebagai narasi inti di samping diagram.
-- Posisi Penelitian menjadi satu scene utuh dengan tabel 6 penelitian + 3 kotak ringkasan: Persamaan, Perbedaan, Hasil Penelitian.
-- Solusi dibuat dalam 4 kartu.
-- Landasan Teori tidak ditampilkan.
-- Tahapan Penelitian memiliki file gambar sendiri.
-- Setiap scene memiliki komponen/file yang jelas.
-- Demo + link + QR berada sebelum Hasil Pengujian, lalu Kesimpulan & Saran.
-- Semua materi inti mengikuti dokumen TA yang diberikan.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Framer_Motion-Latest-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
 
-## Jalankan
-```bash
-npm install
-npm run dev
-```
+---
 
-## Aset yang perlu diganti
-- `public/assets/profile/foto-hasbi.png`
-- `public/assets/logo/logo-sttc.png`
-- `public/assets/screenshots/tahapan-penelitian.png`
-- `public/assets/usecase/increment-01.png`
-- `public/assets/usecase/increment-02.png`
-- `public/assets/usecase/increment-03.png`
-- `public/assets/usecase/increment-04.png`
+## 🌟 Key Features
 
-## Link demo
-Edit:
-`src/data/config.js`
+* **🎨 Modern Web-Based Slide UI:** Tampilan slide futuristik bertema dark-mode dengan efek *glassmorphism*, *ambient background lighting*, dan skala responsif.
+* **⚡ Smooth Animations:** Transisi antar slide dan animasi elemen menggunakan **Framer Motion**.
+* **🔢 Live Count-Up Metrics:** Animasi *counter* dinamis pada hasil pengujian fungsionalitas (*Blackbox Testing* & *UAT*).
+* **⌨️ Full Keyboard Control:** Navigasi cepat tanpa perlu menyentuh mouse saat presentasi sidang:
+  * `<Panah Atas / Bawah>` atau `<Space>` : Pindah slide
+  * `<Home>` / `<End>` : Langsung ke awal / akhir slide
+  * `<?>` / `<Shift + />` : Buka modal *Keyboard Shortcuts*
+  * `<Esc>` : Tutup *overlay* / *modal*
+* **📱 Live Demo Integration:** Fitur pemindaian QR Code interaktif untuk mengakses platform demo secara *real-time*.
 
-```js
-demoUrl: "https://link-sistem.vercel.app"
-```
+---
 
-QR akan otomatis mengikuti link tersebut.
+## 📂 Structure & Slide Overview
 
-## Navigasi
-- Arrow Down / Space / PageDown: berikutnya
-- Arrow Up / PageUp: sebelumnya
-- Home / End: awal / akhir
-- Tombol Navigasi: buka daftar scene
-- Esc: tutup overlay
+1. **Beranda** — Identitas penyusun, NIM, program studi, dan judul Tugas Akhir.
+2. **Roadmap Presentasi** — Alur pembahasan presentasi.
+3. **Pendahuluan & Akar Masalah** — Latar belakang pengelolaan inventaris manual dan solusinya.
+4. **Solusi & Alasan Metode** — Penerapan *Incremental Development* & algoritma *Simple Moving Average (SMA)*.
+5. **Rumusan & Tujuan Penelitian** — Pokok masalah dan tujuan yang dicapai.
+6. **Posisi Penelitian** — Pembanding dengan penelitian-penelitian terdahulu.
+7. **Manfaat & Metodologi** — Aspek teoritis/praktis serta alur tahapan penelitian.
+8. **Tahapan Incremental (1–4)** — Breakdown *Increment* aset, peminjaman, prediksi, hingga pelaporan.
+9. **Live Demo** — Tautan langsung dan QR Code sistem.
+10. **Hasil Pengujian** — Metrik validasi *Black Box Testing* (83 skenario) & *UAT* (58 skenario).
+11. **Kesimpulan & Saran** — Ringkasan penutup dan rekomendasi pengembangan.
 
-\n## Kontrol V5\n
-- **Arrow Up / Down**: pindah slide
-- **Space**: slide berikutnya
-- **Home / End**: awal / akhir
-- **?**: buka panel shortcut
-- **Esc**: tutup overlay
-- **Menu Slide**: membuka daftar slide lengkap + indikator slide aktif
-- **Perbesar Use Case**: membuka diagram Use Case dalam mode layar penuh
+---
 
+## 🛠️ Local Development
 
-### Update V7
-- Bab I Solusi yang Ditawarkan memiliki ilustrasi visual untuk Sistem Informasi, Incremental Development, Simple Moving Average, dan Predictive Maintenance.
-- Ditambahkan slide Alasan Pemilihan Metode yang membandingkan Agile dan Incremental serta alasan penggunaan Incremental Development.
-- Struktur navigasi web, keyboard, zoom, dan menu slide tetap dipertahankan.
+Ikuti langkah berikut untuk menjalankan project ini di komputer lokal kamu:
+
+1. **Clone repository:**
+   ```bash
+   git clone [https://github.com/HASBI019/ppt-ta-hasbi.git](https://github.com/HASBI019/ppt-ta-hasbi.git)
+   cd ppt-ta-hasbi
