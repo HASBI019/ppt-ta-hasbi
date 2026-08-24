@@ -203,9 +203,8 @@ function Home({setIndex}) {
   return <div className="home-grid">
     <div className="home-copy">
       <div className="eyebrow">TUGAS AKHIR · 2026</div>
-      <h1>Rancang Bangun <em>Sistem Informasi</em> Manajemen Inventaris</h1>
+      <h1>Rancang Bangun <span className="hl-blue">Sistem Informasi</span> Manajemen <span className="hl-blue">Inventaris</span></h1>
       <p className="home-sub">di Sekolah Tinggi Teknologi Cipasung dengan Fitur Predictive Maintenance Menggunakan Metode Incremental Development dan Algoritma Simple Moving Average.</p>
-      <div className="author">{config.author} <span>·</span> {config.nim} <span>·</span> {config.program}</div>
       <button className="primary-btn" onClick={() => setIndex(1)}>Mulai Presentasi <ChevronDown size={17}/></button>
     </div>
     <div className="profile-card">
