@@ -243,10 +243,10 @@ function Pendahuluan() {
 
 function Problem() {
   const cards = [
-    ["01","Pencatatan Manual","Data peminjaman masih dicatat dalam buku besar."],
-    ["02","Sulit Dipantau","Pencarian data dan status barang membutuhkan waktu."],
-    ["03","Tidak Real-Time","Ketersediaan stok belum dapat dipantau secara langsung."],
-    ["04","Pemeliharaan","Sebagian aset baru menjalani pemeliharaan setelah mengalami kerusakan."]
+    ["01","Pencatatan Manual","Rentan hilang atau rusak."],
+    ["02","Sulit Dipantau","Proses pencarian riwayat peminjaman yang sulit dipantau dan memakan waktu lama."],
+    ["03","Tidak Real-Time","Ketersediaan stok barang yang tidak bisa dipantau secara real-time oleh mahasiswa."],
+    ["04","Pemeliharaan","Pemeliharaan yang bersifat reaktif (baru diperbaiki setelah rusak), khususnya pada perangkat proyektor."]
   ];
   return <div className="content-wide"><div className="eyebrow">AKAR MASALAH</div><h1>Masalah utama bukan hanya pencatatan.</h1><p className="lead narrow">Masalah muncul ketika data tidak mudah dicari, status aset tidak jelas, dan pemeliharaan belum menggunakan estimasi berbasis data penggunaan.</p><div className="card-grid four">{cards.map(c=><div className="info-card" key={c[0]}><span>{c[0]}</span><h3>{c[1]}</h3><p>{c[2]}</p></div>)}</div></div>
 }
@@ -260,7 +260,7 @@ function Solution() {
   ];
   return <div className="content-wide solution-scene">
     <div className="eyebrow">SOLUSI YANG DITAWARKAN · BAB I</div>
-    <div className="solution-heading"><div><h1>Satu sistem, dikembangkan bertahap.</h1><p className="lead narrow">Solusi menggabungkan digitalisasi inventaris, pengembangan bertahap, pengolahan data pemakaian, dan prediksi pemeliharaan dalam satu sistem.</p></div><div className="solution-flow"><span>SISTEM</span><i>→</i><span>DATA</span><i>→</i><span>PREDIKSI</span><i>→</i><span>MAINTENANCE</span></div></div>
+    <div className="solution-heading"><div><h1>Satu sistem, dikembangkan bertahap.</h1><p className="lead narrow">Solusi ini dibangun dengan menggabungkan digitalisasi sistem berbasis web, metode pengembangan bertahap Incremental Development </p></div><div className="solution-flow"><span>SISTEM</span><i>→</i><span>DATA</span><i>→</i><span>PREDIKSI</span><i>→</i><span>MAINTENANCE</span></div></div>
     <div className="solution-card-grid">{cards.map(c=><div className="solution-card-clean" key={c[0]}>
       <span className="solution-number">{c[0]}</span>
       <div className="solution-card-line" />
